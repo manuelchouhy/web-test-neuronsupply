@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-neuron-cyan: var(--neuron-cyan);
+  --color-neuron-purple: var(--neuron-purple);
+  --color-neuron-dark: var(--neuron-dark);
+  
+  --font-sans: var(--font-inter);
+}
+
+:root {
+  --background: #05050f;
+  --foreground: #ededed;
+  --neuron-cyan: #00f2fe;
+  --neuron-purple: #8a2be2;
+  --neuron-dark: #0a0a1a;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--neuron-purple);
+  color: white;
+}
